@@ -26,6 +26,7 @@ body, html {
 }
 
 .logo2 {
+  max-width: 50%;
   font-weight: bold;
   font-size: 1.5rem;
 }
@@ -981,3 +982,118 @@ body {
         height: 180px;
     }
 }
+
+
+
+
+
+
+        .footer-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: #fff;
+            border-top: 1px solid #e0e0e0;
+        }
+        
+        .footer-brand {
+            flex: 1 1 300px;
+            margin-bottom: 30px;
+            padding-right: 20px;
+        }
+        
+        .footer-brand h1 {
+            font-size: 28px;
+            color: #222;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        
+        .footer-brand p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        
+        .support-contact {
+            font-weight: 700;
+            color: #444;
+            margin-bottom: 5px;
+        }
+        
+        .phone-number {
+            font-size: 18px;
+            color: #222;
+            font-weight: 600;
+        }
+        
+        .divider {
+            width: 100%;
+            height: 1px;
+            background-color: #e0e0e0;
+            margin: 20px 0;
+        }
+        
+        .footer-column {
+            flex: 1 1 200px;
+            margin-bottom: 30px;
+            padding: 0 15px;
+        }
+        
+        .footer-column h2 {
+            font-size: 20px;
+            color: #222;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        
+        .footer-column ul {
+            list-style: none;
+        }
+        
+        .footer-column li {
+            margin-bottom: 12px;
+        }
+        
+        .footer-column a {
+            color: #666;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-column a:hover {
+            color: #000;
+        }
+        
+        .post-item {
+            margin-bottom: 20px;
+        }
+        
+        .post-title {
+            font-weight: 600;
+            color: #222;
+            margin-bottom: 5px;
+        }
+        
+        .post-date {
+            font-size: 14px;
+            color: #999;
+        }
+        
+        .copyright {
+            width: 100%;
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            color: #777;
+            font-size: 14px;
+        }
+        
+        @media (max-width: 768px) {
+            .footer-column {
+                flex: 1 1 100%;
+            }
+        }
