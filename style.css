@@ -1324,3 +1324,91 @@ body {
         font-size: 1rem;
       }
     }
+
+
+
+
+  
+
+
+.nossos-minerios7 {
+  padding: 2rem 1rem;
+  background-color: black;
+  text-align: center;
+}
+
+.nossos-minerios7 h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: orange;
+}
+
+  .minerios-section7 {
+  background: whitesmoke;
+  padding: 2rem 1rem;
+  overflow-x: auto;
+}
+
+.minerios-container7 {
+  display: flex;
+  gap: 2rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 1rem;
+}
+
+.minerio7 {
+  flex: 0 0 auto;
+  scroll-snap-align: center;
+  position: relative;
+  border-radius: 12px;
+  padding: 0 1rem;
+}
+
+/* Oculta o checkbox */
+.toggle7 {
+  display: none;
+}
+
+.minerio7 label {
+  display: block;
+  cursor: pointer;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+/* Imagem */
+.minerio7 img {
+  height: auto;
+  width: auto;
+  max-width: 250px;
+  max-height: 250px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+  transition: transform 0.3s ease;
+}
+
+/* Nome do minério */
+.minerio7 span {
+  display: block;
+  
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  text-align: center;
+  padding: 0.5rem 0;
+  font-size: 1rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* Exibe o nome ao clicar */
+.toggle7:checked + label span {
+  opacity: 1;
+}
