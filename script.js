@@ -176,3 +176,35 @@ function revealCards3() {
         });
     });
 });
+
+
+
+
+
+
+
+
+
+
+  const titulos = document.querySelectorAll('.mvp-titulo');
+
+  titulos.forEach((titulo) => {
+    titulo.addEventListener('click', () => {
+      const conteudo = titulo.nextElementSibling;
+
+      // Fecha os outros abertos
+      document.querySelectorAll('.mvp-conteudo').forEach((el) => {
+        if (el !== conteudo) {
+          el.style.maxHeight = null;
+        }
+      });
+
+      // Alterna o atual
+      if (conteudo.style.maxHeight) {
+        conteudo.style.maxHeight = null;
+      } else {
+        conteudo.style.maxHeight = conteudo.scrollHeight + "px";
+      }
+    });
+  });
+
