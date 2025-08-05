@@ -234,3 +234,25 @@ document.getElementById('form-contato').addEventListener('submit', function(e) {
 
       window.open(link, '_blank');
     });
+
+
+
+
+ const perguntas = document.querySelectorAll('.faq-question');
+
+    perguntas.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const isActive = btn.classList.contains('active');
+
+        // Fecha todos
+        document.querySelectorAll('.faq-question').forEach(q => q.classList.remove('active'));
+        document.querySelectorAll('.faq-answer').forEach(a => a.style.maxHeight = null);
+
+        // Abre somente se não estiver ativa
+        if (!isActive) {
+          btn.classList.add('active');
+          const resposta = btn.nextElementSibling;
+          resposta.style.maxHeight = resposta.scrollHeight + 'px';
+        }
+      });
+    });
