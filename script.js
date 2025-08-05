@@ -208,3 +208,29 @@ function revealCards3() {
     });
   });
 
+
+
+
+
+
+document.getElementById('form-contato').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const nome = document.getElementById('nome').value;
+      const empresa = document.getElementById('empresa').value;
+      const cargo = document.getElementById('cargo').value;
+      const email = document.getElementById('email').value;
+      const mensagem = document.getElementById('mensagem').value;
+
+      const texto = `*Novo contato pelo site!*%0A
+*Nome:* ${nome}%0A
+*Empresa:* ${empresa}%0A
+*Cargo:* ${cargo}%0A
+*E-mail:* ${email}%0A
+*Mensagem:* ${mensagem}`;
+
+      const numero = '5561996067198'; // Número no formato internacional (Brasil: 55 + DDD + número)
+      const link = `https://wa.me/${numero}?text=${texto}`;
+
+      window.open(link, '_blank');
+    });
