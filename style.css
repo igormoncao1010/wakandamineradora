@@ -26,6 +26,7 @@ body, html {
 }
 
 .logo2 {
+  align-items: left;
   max-width: 50%;
   font-weight: bold;
   font-size: 1.5rem;
@@ -142,6 +143,7 @@ body, html {
 }
 
 .hero-text2 h1 {
+  text-align: left;
   font-size: 3rem;
   font-weight: 800;
   margin-bottom: 1rem;
@@ -823,7 +825,7 @@ body {
 
 .blog-title5 {
     font-size: 2.5rem;
-    color: var(--dark-color);
+    color: black;
     margin-bottom: 15px;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -839,7 +841,7 @@ body {
     transform: translateX(-50%);
     width: 80px;
     height: 3px;
-    background-color: var(--accent-color);
+    background-color: orange;
 }
 
 .blog-subtitle5 {
@@ -888,7 +890,7 @@ body {
 }
 
 .blog-card-header5 {
-    background: var(--primary-color);
+    background: orange;
     color: white;
     padding: 12px 20px;
     font-size: 1rem;
@@ -995,7 +997,7 @@ body {
             max-width: 1200px;
             margin: 0 auto;
             padding: 40px 20px;
-            background-color: #fff;
+            background-color: black;
             border-top: 1px solid #e0e0e0;
         }
         
@@ -1007,26 +1009,26 @@ body {
         
         .footer-brand h1 {
             font-size: 28px;
-            color: #222;
+            color: orange;
             margin-bottom: 20px;
             font-weight: 700;
         }
         
         .footer-brand p {
-            color: #666;
+            color: white;
             line-height: 1.6;
             margin-bottom: 20px;
         }
         
         .support-contact {
             font-weight: 700;
-            color: #444;
+            color: white;
             margin-bottom: 5px;
         }
         
         .phone-number {
             font-size: 18px;
-            color: #222;
+            color: orange;
             font-weight: 600;
         }
         
@@ -1045,7 +1047,7 @@ body {
         
         .footer-column h2 {
             font-size: 20px;
-            color: #222;
+            color: orange;
             margin-bottom: 20px;
             font-weight: 600;
         }
@@ -1059,7 +1061,7 @@ body {
         }
         
         .footer-column a {
-            color: #666;
+            color: white;
             text-decoration: none;
             transition: color 0.3s;
         }
@@ -1074,13 +1076,13 @@ body {
         
         .post-title {
             font-weight: 600;
-            color: #222;
+            color: orange;
             margin-bottom: 5px;
         }
         
         .post-date {
             font-size: 14px;
-            color: #999;
+            color: white;
         }
         
         .copyright {
@@ -1088,7 +1090,7 @@ body {
             text-align: center;
             padding-top: 20px;
             border-top: 1px solid #e0e0e0;
-            color: #777;
+            color: white;
             font-size: 14px;
         }
         
@@ -1411,4 +1413,218 @@ body {
 /* Exibe o nome ao clicar */
 .toggle7:checked + label span {
   opacity: 1;
+}
+
+
+
+
+
+
+.contact-industry-section {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #111;
+  color: white;
+  padding: 40px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.contact-box {
+  display: flex;
+  flex: 1;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.contact-info {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  max-width: 300px;
+}
+
+.contact-info .icon {
+  font-size: 40px;
+  color: orange;
+}
+
+.contact-info .text h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.industry-box {
+  background-color: orange;
+  color: white;
+  padding: 30px;
+  max-width: 400px;
+  margin-left: auto;
+}
+
+.industry-box h2 {
+  font-size: 28px;
+  margin: 0 0 15px 0;
+  line-height: 1.3;
+}
+
+.industry-box p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .contact-industry-section {
+    flex-direction: column;
+  }
+
+  .contact-box {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .industry-box {
+    margin-left: 0;
+    margin-top: 40px; /* espaço extra na versão mobile */
+  }
+}
+
+
+
+
+
+
+.latest-projects {
+  text-align: center;
+  padding: 80px 40px;
+  background-color: #fff;
+}
+
+.latest-header .subtitle {
+  color: orange;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.latest-header h2 {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1.2;
+  color: #111;
+}
+
+.project-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  gap: 30px;
+}
+
+.project-card {
+  width: 300px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.project-info {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: #fff;
+  text-align: left;
+}
+
+.project-info .date {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.project-info h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+
+
+
+
+
+.team-section {
+  padding: 60px 40px;
+  text-align: center;
+  background-color: white;
+}
+
+.team-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+}
+
+.team-member {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+ 
+  transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-5px);
+}
+
+.team-member img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.team-member h3 {
+  font-size: 18px;
+  margin: 10px 0 5px;
+  color: #111;
+}
+
+.team-member p {
+  font-size: 14px;
+  color: #777;
+}
+
+/* Responsivo */
+@media (max-width: 1024px) {
+  .team-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
 }
